@@ -1,0 +1,9 @@
+@echo off
+:start
+cd C:\path\to\presentation
+if exist C:\path\to\second\presentation\presentation2.pptx (
+move "C:\path\to\second\presentation\presentation2.pptx" "C:\path\to\presentation\presentation2.pptx"
+taskkill /F /IM POWERPNT.EXE
+del "C:\path\to\presentation\presentation1.pptx"
+ren "C:\path\to\presentation\presentation2.pptx" presentation1.pptx )
+goto start

@@ -1,0 +1,5 @@
+@echo off
+cd C:\path\to\presentation\
+:start
+if exist C:\path\to\presentation\presentation1.pptx ("C:\Program Files (x86)\Microsoft Office\Office16\POWERPNT.EXE" /S "C:\path\to\presentation\presentation1.pptx")
+goto start
